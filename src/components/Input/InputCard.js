@@ -49,9 +49,9 @@ export default function InputCard({ setOpen, listId, type }) {
             <div >
                 <Paper className={classes.card}>
                     <InputBase
+                        multiline={true}
                         onChange={handleOnChange}
                         onBlur={() => setOpen(false)}
-                        multiline
                         fullWidth
                         inputProps={{
                             className: classes.input
